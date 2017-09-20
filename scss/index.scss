@@ -1,0 +1,132 @@
+.home{
+  .title{
+    font-size: 26px;
+    color: $black;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-align: center;
+    padding: 5% 0 5% 0;
+    margin: 0;
+  }
+  .first-title{
+    font-size: 26px;
+    color: $black;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-align: center;
+    padding: 5% 0 1% 0;
+    margin: 0;
+  }
+  .second-title{
+    font-size: 26px;
+    color: $black;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-align: center;
+    padding: 0% 0 5% 0;
+    margin: 0;
+  }
+  .body-slogan{
+    padding: 5% 0;
+    background: url(img/background_home.png) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    .text{
+      padding-top: 11%;
+      text-align: center;
+      color: $black
+    }
+  }
+  .body-activity{
+    padding: 5% 0;
+    .block-activity{
+      color: $black;
+      margin-bottom: 20px;
+      .info-activity{
+        font-size: 22px;
+        margin-bottom: 5px
+      }
+    }
+  }
+  .body-car{
+    padding: 5% 0;
+    .second-flotte{
+      margin-top: 5%
+    }
+    .info-car{
+      text-align: center;
+      font-size: 17px;
+      font-weight: 200;
+      color: $black;
+      span{
+        display: block;
+        font-size: 14px;
+      }
+    }
+    .img-flotte{
+      text-align: center;
+      img{
+        width: 470px;
+        border-radius: 10px;
+      }
+    }
+  }
+  .body-flotte{
+    padding: 5% 5% 5% 5%;
+    .img-flotte{
+      text-align: center;
+      img{
+        width: 98%;
+        border-radius: 10px
+      }
+    }
+    .info{
+      text-align: center;
+      padding-bottom: 5%;
+      font-size: 20px;
+    }
+    @media (max-width: 768px) {
+      padding: 5%;
+      .col-sm-4{
+        padding-bottom: 5%
+      }
+    }
+  }
+  .body-ramassage{
+    padding: 5% 0;
+    .col-sm-8{
+      padding: 0 5%;
+      .subtitle{
+        text-align: center;
+        font-size: 19px;
+        padding-bottom: 5%;
+      }
+      .infos{
+        color: black;
+        .glyphicon{
+          font-size: 14px;
+          margin-right: 10px;
+        }
+      }
+      .web-info{
+        padding-top: 5%;
+        font-size: 20px;
+        color: $brand-primary;
+        img{
+          height: 80px;
+          width: 80px;
+        }
+      }
+      .question-transport{
+        display: block;
+        text-align: center;
+        padding-top: 5%
+      }
+    }
+  }
+  .picture-background{
+    img{
+      width: 100%
+    }
+  }
+}
