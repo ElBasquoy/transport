@@ -24,9 +24,23 @@ button.btn.btn-default.dropdown-toggle:hover .dropdown-menu {
   margin-top: 0;
 }
 header{
-  background: #b9b9b9;
+  background: black;
   padding: 1.5em 1em;
-  height: 70px;
+  height: 75px;
+  @media (max-width: 1380px) {
+    height: 140px;
+  }
+  .navbar-primary{
+    margin-bottom: 0;
+    background: black;
+    border: black;
+  }
+  .navbar-default .navbar-nav > li > a{
+    color: white
+  }
+  .navbar-default .navbar-nav > li > a:hover{
+    color: #c34949
+  }
   @media (max-width: 768px) {
     padding: 1em;
     .btn-group {
@@ -54,7 +68,14 @@ header{
       font-size: 90%;
     }
   }
-
+  .dropdown-menu, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+    background: black;
+    width: 100%;
+    a{
+      width: 100%;
+      background: black
+    }
+  }
 }
 a{
 	cursor: pointer;
@@ -62,9 +83,9 @@ a{
 a:hover{
 	text-decoration: none;
 }
-button.btn.btn-default.dropdown-toggle{
-	float: right;
-}
 h1{
   font-size: 50px;
+}
+.text-center{
+  text-align: center
 }

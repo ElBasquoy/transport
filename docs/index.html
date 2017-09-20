@@ -11,56 +11,67 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vollkorn">
 </head>
 <body class="home">
-  <header>
-    <div class="hidden-xs">
+  <header class="hidden-xs">
+    <div class="row">
       <a class="col-sm-3 logo-atelier" href="index.html">
         <img src="img/logo_etchegaray.png" alt="logo-etchegaray" width="130"/>
       </a>
-      <div class="col-sm-2">
-        <a href="maintenance.html" class="btn btn-link btn-block">
-          NOS VEHICULES
-        </a>
-      </div>
-      <div class="col-sm-2">
-        <a href="maintenance.html" class="btn btn-link btn-block">
-            SCOLAIRE
-        </a>
-      </div>
-      <div class="col-sm-3">
-        <a href="contact.html" class="btn btn-link btn-block">
-          LIGNE BAYONNE > SAINT JEAN
-        </a>
-      </div>
-      <div class="col-sm-2">
-        <a href="contact.html" class="btn btn-link btn-block">
-          NOUS CONTACTER
-        </a>
+      <div class="col-sm-9">
+        <nav class="navbar navbar-default navbar-primary">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li>
+                <a id="activity" class="btn btn-link btn-block">
+                  ACTIVITÉS
+                </a>
+              </li>
+              <li>
+                <a id="history" class="btn btn-link btn-block">
+                  HISTORIQUE
+                </a>
+              </li>
+              <li>
+                <a id="car" class="btn btn-link btn-block">
+                  TOURISME
+                </a>
+              </li>
+              <li>
+                <a id="flotte" class="btn btn-link btn-block">
+                  FLOTTE
+                </a>
+              </li>
+              <li>
+                <a id="ramassage" class="btn btn-link btn-block">
+                  SCOLAIRE
+                </a>
+              </li>
+              <li>
+                <a id="regu" class="btn btn-link btn-block">
+                  BAYONNE > ST JEAN PIED DE PORT
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-    <div class="visible-xs">
-      <a class="logo-atelier" href="index.html">
-        <img src="img/background_activity.png" alt="logo-atelier"/>
-      </a>
-      <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Accueil <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="index.html">Accueil</li>
-          <li role="separator" class="divider"></li>
-          <li><a href="histoire.html">Histoire</a></li>
-          <li><a href="qualite.html">Qualité et sécurité certifiées</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#maintenance.html">MAINTENANCE</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="distributeur.html">Distributeur</a></li>
-          <li><a href="vente-pompe.html">Pompe</a></li>
-          <li><a href="vente-moteur.html">Moteur</a></li>
-          <li><a href="vente-groupe.html">Groupe Electrogène</a></li>
-          <li><a href="vente-compresseur.html">Compresseur</a></li>
+    <!--<div class="visible-xs">
+      <nav class="navbar navbar-default navbar-primary">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Liens <span class="caret"></span></a>
+            <ul class="dropdown-menu open">
+              <li><a href="#activity">ACTIVITÉS</a></li>
+              <li><a href="#history">HISTORIQUE</a></li>
+              <li><a href="#car">TOURISME</a></li>
+              <li><a href="#car">FLOTTE</a></li>
+              <li><a href="#ramassage">SCOLAIRE</a></li>
+              <li><a href="#regu">BAYONNE > ST JEAN PIED DE PORT</a></li>
+            </ul>
+          </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </div>-->
   </header>
   <div class="body-slogan">
     <div class="text">
@@ -71,10 +82,10 @@
   </div>
 	<div class="body-activity">
     <div class="row">
-      <div class="col-sm-6 picture-background">
+      <div class="col-sm-6 picture-background hidden-xs">
         <img src="img/background_activity.png" alt="background-activity"/>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 info-activities">
          <h4 class="title">NOS ACTIVITÉS :</h4>
           <div class="row">
             <div class="col-sm-6">
@@ -83,22 +94,32 @@
                     Transport scolaire
                   </div>
                   <div class="list-activity">
+                    <h5>
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                       Ramassages scolaire
-                      <br />
+                    </h5>
+                    <h5>
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                       Sorties péri – scolaire
-                      <br />
+                    </h5>
+                    <h5>
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                       Classes découverte
+                    </h5>
                   </div>
               </div>
             </div>
             <div class="col-sm-6">
                 <div class="block-activity">
-                    <div class="info-activity">
-                      Ligne Régulière
-                    </div>
-                    <div class="list-activity">
+                  <div class="info-activity">
+                    Ligne Régulière
+                  </div>
+                  <div class="list-activity">
+                    <h5>
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                       Ligne Bayonne > St Jean Pied de Port
-                    </div>
+                    </h5>
+                  </div>
                 </div>
             </div>
           </div>
@@ -109,42 +130,60 @@
                     Tourisme
                   </div>
                   <div class="list-activity">
-                      Excursions à la journée
-                      <br />
-                      Séjours (en France ou à l’étranger)
-                      <br />
-                      Sorties cidreries
-                      <br />
-                      Réceptif pour les hôtels de la région
+                      <h5>
+                        <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+                        Excursions à la journée
+                      </h5>
+                      <h5>
+                        <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+                        Séjours (en France ou à l’étranger)
+                      </h5>
+                      <h5>
+                        <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+                        Sorties cidreries
+                      </h5>
+                      <h5>
+                        <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+                        Réceptif pour les hôtels de la région
+                      </h5>
                   </div>
               </div>
             </div>
             <div class="col-sm-6">
-            <dwiv class="block-activity">
-              <div class="info-activity">
-                Location 9 places sans conducteurs
-              </div>
-              <div class="list-activity">
-                Seulement en période de vacances scolaires
+              <div class="block-activity">
+                <div class="info-activity">
+                  Location 9 places sans conducteurs
+                </div>
+                <div class="list-activity">
+                  <h5>
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    Seulement en période de vacances scolaires
+                  </h5>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-sm-6 picture-background visible-xs">
+          <img src="img/background_activity.png" alt="background-activity"/>
+        </div>
       </div>
     </div>
   </div>
-	<div class="body-histoy">
+	<div class="body-history">
     <div class="row">
       <div class="col-sm-6">
-        <h2 class="title">HISTORIQUE :</h2>
-        <p>
+        <div class="img-bask">
+          <h2 class="title">HISTORIQUE :</h2>
+        </div>
+        <h3 class="subtitle-history">
           Trois générations se sont succédées depuis la création de l'entreprise en 1952.
-        </p>
-        <p>
+        </h3>
+        <h3 class="info-history">
           Avec un seul autocar, Louis assure pendant presque 20 ans la liaison pour aller dans les différents marchés des environs.
           <br/>
           Dans les années 70, l’activité se développe avec l’arrivée des transports scolaires.
-        </p>
+        </h3>
       </div>
       <div class="col-sm-6 picture-background">
         <img src="img/background_history.png" alt="background-history"/>
@@ -225,7 +264,7 @@
   </div>
   <div class="body-ramassage">
     <div class="row">
-      <div class="col-sm-4 picture-background">
+      <div class="col-sm-4 picture-background hidden-xs">
         <img src="img/background_ramassage.png" alt="background-ramassage"/>
       </div>
       <div class="col-sm-8">
@@ -250,16 +289,16 @@
           L’établissement d’un duplicata de carte de transport
         </h4>
         <div class="row">
-          <a class="col-sm-offset-2 col-sm-4 web-info">
+          <a class="col-sm-offset-2 col-sm-4 col-xs-12 web-info">
             Le site :
             <img src="img/icon_clock_ramassage.png" alt="icon-clock-ramassage"/>
           </a>
-          <a class="col-sm-offset-1 col-sm-5 web-info">
+          <a class="col-sm-offset-1 col-sm-5 col-xs-12 web-info">
             Les horaires :
             <img src="img/icon_website_ramassage.png" alt="icon-website-ramassage"/>
           </a>
         </div>
-        <a class="question-transport">
+        <a class="question-transport hidden-xs">
           <img src="img/question_transport.png" alt="question-transport" height="150"/>
         </a>
       </div>
@@ -270,19 +309,71 @@
       <div class="col-sm-6">
         <h2 class="first-title">LIGNE REGULIERE</h2>
         <h2 class="second-title">BAYONNE > ST JEAN PIED DE PORT :</h2>
-        <h3>Cette ligne est spécialement réservée aux internes qui vont dans un établissement scolaire de St Jean Pied de Port. L’inscription se fait par téléphone au 05.59.37.67.55 ou mail transports.etchegaray@orange.fr
+        <h3 class="infos">
+          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+          Cette ligne est spécialement réservée aux internes qui vont dans un établissement scolaire de St Jean Pied de Port. L’inscription se fait par téléphone au 05.59.37.67.55 ou mail <a href="mailto:transports.etchegaray@orange.fr">transports.etchegaray@orange.fr</a>
+        </h3>
+        <h3 class="infos">
+          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
           L’abonnement annuel, règlement en 5 fois (correspond à chaque vacances scolaires). Il n’y a pas de carte, l’enfant est inscrit sur la liste du conducteur.
+        </h3>
+        <h3 class="infos">
+          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
           Ci - dessous les tarifs ainsi que les points d’arrêts et les horaires :
-          </h3>
+        </h3>
+        <div class="tarifs">
           <img src="img/excel_reguliere.png" alt="excel-reguliere"/>
+        </div>
       </div>
-      <div class="col-sm-6 picture-background">
+      <div class="col-sm-6 picture-background hidden-xs">
         <img src="img/background_reguliere.png" alt="background-reguliere"/>
       </div>
     </div>
   </div>
   <div class="body-contact">
-    Pour toute demande de devis, contactez-nous par mail, téléphone, fax, ou formulaire contact, réponse dans l’heure qui suit !
+    <div class="row">
+      <div class="col-sm-6">
+        <h4 class="subtitle">
+          Pour toute demande de devis, contactez-nous par mail, téléphone, fax, ou formulaire contact, réponse dans l’heure qui suit !
+        </h4>
+        <div class="row">
+          <div class="col-xs-offset-2 col-xs-2 text-center">
+            <img src="img/icon_localization.png" alt="icon-localization" height="30"/>
+          </div>
+          <div class="col-xs-8 info">
+            "Kayola" - Bourg <br/> 64780 Irissarry
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-offset-2 col-xs-2 text-center">
+              <img src="img/icon_phone.png" alt="icon-phone" height="30"/>
+          </div>
+        <div class="col-xs-8 info">
+            TEL/FAX : 05.59.37.67.55 <br/>
+            PORT : 06.12.58.82.66
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-offset-2 col-xs-2 text-center">
+              <img src="img/icon_email.png" alt="icon-email" height="30"/>
+          </div>
+          <a href="mailto:transports.etchegaray@orange.fr" class="col-xs-8 info">
+            transports.etchegaray@orange.fr
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-sm-offset-2 col-xs-2 text-center">
+              <img src="img/icon_fb.png" alt="icon-fb" height="30"/>
+          </div>
+          <a href="https://www.facebook.com/TransportsEtchegaray/" target="_blank" class="col-xs-8 info">
+            TransportsEtchegaray
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6">
+         map google
+      </div>
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

@@ -6070,9 +6070,20 @@ button.btn.btn-default.dropdown-toggle:hover .dropdown-menu {
   margin-top: 0; }
 
 header {
-  background: #b9b9b9;
+  background: black;
   padding: 1.5em 1em;
-  height: 70px; }
+  height: 75px; }
+  @media (max-width: 1380px) {
+    header {
+      height: 140px; } }
+  header .navbar-primary {
+    margin-bottom: 0;
+    background: black;
+    border: black; }
+  header .navbar-default .navbar-nav > li > a {
+    color: white; }
+  header .navbar-default .navbar-nav > li > a:hover {
+    color: #c34949; }
   @media (max-width: 768px) {
     header {
       padding: 1em; }
@@ -6092,6 +6103,12 @@ header {
   header .logo-atelier span {
     color: #FFFFFF;
     font-size: 90%; }
+  header .dropdown-menu, header .navbar-default .navbar-nav > .open > a, header .navbar-default .navbar-nav > .open > a:hover, header .navbar-default .navbar-nav > .open > a:focus {
+    background: black;
+    width: 100%; }
+    header .dropdown-menu a, header .navbar-default .navbar-nav > .open > a a, header .navbar-default .navbar-nav > .open > a:hover a, header .navbar-default .navbar-nav > .open > a:focus a {
+      width: 100%;
+      background: black; }
 
 a {
   cursor: pointer; }
@@ -6099,11 +6116,11 @@ a {
 a:hover {
   text-decoration: none; }
 
-button.btn.btn-default.dropdown-toggle {
-  float: right; }
-
 h1 {
   font-size: 50px; }
+
+.text-center {
+  text-align: center; }
 
 .home .title {
   font-size: 26px;
@@ -6138,18 +6155,41 @@ h1 {
   -webkit-background-size: cover;
   background-size: cover; }
   .home .body-slogan .text {
-    padding-top: 11%;
+    padding-top: 8%;
     text-align: center;
     color: #000000; }
+    @media (max-width: 768px) {
+      .home .body-slogan .text {
+        padding-top: 25%; }
+        .home .body-slogan .text h1 {
+          font-size: 30px; }
+        .home .body-slogan .text h2 {
+          font-size: 27px; } }
 
 .home .body-activity {
   padding: 5% 0; }
-  .home .body-activity .block-activity {
-    color: #000000;
-    margin-bottom: 20px; }
-    .home .body-activity .block-activity .info-activity {
-      font-size: 22px;
-      margin-bottom: 5px; }
+  .home .body-activity .picture-background img {
+    border-radius: 0px 5px 5px 0px; }
+    @media (max-width: 768px) {
+      .home .body-activity .picture-background img {
+        padding: 5%;
+        border-radius: 5px; } }
+  .home .body-activity .info-activities {
+    padding: 0 2%; }
+    .home .body-activity .info-activities .title {
+      padding-bottom: 10%; }
+      @media (max-width: 768px) {
+        .home .body-activity .info-activities .title {
+          padding-bottom: 5%; } }
+    .home .body-activity .info-activities .block-activity {
+      color: #000000;
+      margin-bottom: 20px;
+      padding: 0 5%; }
+      .home .body-activity .info-activities .block-activity .info-activity {
+        font-size: 22px;
+        margin-bottom: 5px; }
+      .home .body-activity .info-activities .block-activity .list-activity .glyphicon {
+        margin-right: 5px; }
 
 .home .body-car {
   padding: 5% 0; }
@@ -6167,7 +6207,12 @@ h1 {
     text-align: center; }
     .home .body-car .img-flotte img {
       width: 470px;
-      border-radius: 10px; }
+      border-radius: 5px; }
+    @media (max-width: 768px) {
+      .home .body-car .img-flotte {
+        padding: 0 5%; }
+        .home .body-car .img-flotte img {
+          width: 100%; } }
 
 .home .body-flotte {
   padding: 5% 5% 5% 5%; }
@@ -6175,7 +6220,7 @@ h1 {
     text-align: center; }
     .home .body-flotte .img-flotte img {
       width: 98%;
-      border-radius: 10px; }
+      border-radius: 5px; }
   .home .body-flotte .info {
     text-align: center;
     padding-bottom: 5%;
@@ -6186,8 +6231,40 @@ h1 {
       .home .body-flotte .col-sm-4 {
         padding-bottom: 5%; } }
 
+.home .body-history .img-bask {
+  padding: 5% 0;
+  background: url(img/background_bask.png) no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: 5% 15%;
+  border-radius: 5px; }
+  @media (max-width: 768px) {
+    .home .body-history .img-bask {
+      background: none; } }
+
+.home .body-history .subtitle-history {
+  text-align: center;
+  font-size: 21px;
+  padding: 0 5%;
+  color: black; }
+
+.home .body-history .info-history {
+  text-align: center;
+  font-size: 19px;
+  padding: 0 5%;
+  color: black; }
+
+.home .body-history .picture-background {
+  border-radius: 5px 0px 0px 5px; }
+  @media (max-width: 768px) {
+    .home .body-history .picture-background {
+      padding: 5%;
+      border-radius: 5px; } }
+
 .home .body-ramassage {
-  padding: 5% 0; }
+  padding-bottom: 5%; }
+  .home .body-ramassage .picture-background {
+    border-radius: 0px 5px 5px 0px; }
   .home .body-ramassage .col-sm-8 {
     padding: 0 5%; }
     .home .body-ramassage .col-sm-8 .subtitle {
@@ -6206,10 +6283,45 @@ h1 {
       .home .body-ramassage .col-sm-8 .web-info img {
         height: 80px;
         width: 80px; }
+      @media (max-width: 768px) {
+        .home .body-ramassage .col-sm-8 .web-info {
+          text-align: center; } }
     .home .body-ramassage .col-sm-8 .question-transport {
       display: block;
       text-align: center;
       padding-top: 5%; }
+
+.home .body-regu {
+  padding-bottom: 5%; }
+  .home .body-regu .infos {
+    color: black;
+    font-size: 18px;
+    padding: 5px 5%; }
+    .home .body-regu .infos a, .home .body-regu .infos a:hover {
+      color: black;
+      text-decoration: none; }
+    .home .body-regu .infos .glyphicon {
+      font-size: 14px;
+      margin-right: 10px; }
+  .home .body-regu .tarifs {
+    text-align: center; }
+    .home .body-regu .tarifs img {
+      width: 95%; }
+
+.home .body-contact {
+  padding-bottom: 5%; }
+  .home .body-contact .col-sm-6 .subtitle {
+    padding: 0 5%;
+    text-align: center;
+    color: black; }
+  .home .body-contact .col-sm-6 .info {
+    color: black;
+    font-size: 18px; }
+    @media (max-width: 768px) {
+      .home .body-contact .col-sm-6 .info {
+        font-size: 16px; } }
+  .home .body-contact .col-sm-6 .row {
+    padding: 2% 0; }
 
 .home .picture-background img {
   width: 100%; }
