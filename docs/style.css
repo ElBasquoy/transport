@@ -6168,6 +6168,8 @@ h1 {
 
 .home .body-activity {
   padding: 5% 0; }
+  .home .body-activity .second-activity {
+    padding-top: 10%; }
   .home .body-activity .picture-background img {
     border-radius: 0px 5px 5px 0px; }
     @media (max-width: 768px) {
@@ -6205,6 +6207,9 @@ h1 {
       font-size: 14px; }
   .home .body-car .img-flotte {
     text-align: center; }
+    .home .body-car .img-flotte .carousel-flotte {
+      width: 470px;
+      display: inline-block; }
     .home .body-car .img-flotte img {
       width: 470px;
       border-radius: 5px; }

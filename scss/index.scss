@@ -48,6 +48,9 @@
   }
   .body-activity{
     padding: 5% 0;
+    .second-activity{
+      padding-top: 10%
+    }
     .picture-background{
       img{
         border-radius: 0px 5px 5px 0px;
@@ -98,6 +101,10 @@
     }
     .img-flotte{
       text-align: center;
+      .carousel-flotte{
+        width: 470px;
+        display: inline-block;
+      }
       img{
         width: 470px;
         border-radius: 5px;
