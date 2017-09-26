@@ -13,47 +13,58 @@
 <body class="home">
   <header class="hidden-xs">
     <div class="row">
-      <a class="col-sm-3 logo-atelier" href="index.html">
-        <img src="img/logo_etchegaray.png" alt="logo-etchegaray" width="130"/>
-      </a>
-      <div class="col-sm-9">
-        <nav class="navbar navbar-default navbar-primary">
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li>
-                <a id="activity" class="btn btn-link btn-block">
-                  ACTIVITÉS
-                </a>
-              </li>
-              <li>
-                <a id="history" class="btn btn-link btn-block">
-                  HISTORIQUE
-                </a>
-              </li>
-              <li>
-                <a id="car" class="btn btn-link btn-block">
-                  TOURISME
-                </a>
-              </li>
-              <li>
-                <a id="flotte" class="btn btn-link btn-block">
-                  FLOTTE
-                </a>
-              </li>
-              <li>
-                <a id="ramassage" class="btn btn-link btn-block">
-                  SCOLAIRE
-                </a>
-              </li>
-              <li>
-                <a id="regu" class="btn btn-link btn-block">
-                  BAYONNE > ST JEAN PIED DE PORT
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <ul class="nav nav-pills">
+          <li class="col-sm-3">
+            <a class="logo-atelier" href="index.html">
+              <img src="img/logo_etchegaray.png" alt="logo-etchegaray" width="130"/>
+            </a>
+          </li>
+          <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">ENTREPRISE <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li>
+                    <a id="activity">
+                      ACTIVITÉS
+                    </a>
+                  </li>
+                  <li>
+                    <a id="history">
+                      HISTORIQUE
+                    </a>
+                  </li>
+              </ul>
+          </li>
+          <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">VÉHICULE <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li>
+                    <a id="car">
+                      TOURISME
+                    </a>
+                  </li>
+                  <li>
+                    <a id="flotte">
+                      FLOTTE
+                    </a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a id="ramassage">
+              SCOLAIRE
+            </a>
+          </li>
+          <li>
+            <a id="regu">
+              BAYONNE > ST JEAN PIED DE PORT
+            </a>
+          </li>
+          <li>
+            <a id="ramassage" class="pull-right">
+              CONTACT
+            </a>
+          </li>
+      </ul>
     </div>
     <!--<div class="visible-xs">
       <nav class="navbar navbar-default navbar-primary">
@@ -451,21 +462,10 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <form method="POST" name="contactform" action="contact-form-handler.php">
-          <p>
-          <label for='name'>Your Name:</label> <br>
-          <input type="text" name="name">
-          </p>
-          <p>
-          <label for='email'>Email Address:</label> <br>
-          <input type="text" name="email"> <br>
-          </p>
-          <p>
-          <label for='message'>Message:</label> <br>
-          <textarea name="message"></textarea>
-          </p>
-          <input type="submit" value="Submit"><br>
-          </form>
+        <div class="title-devis">
+          DEMANDE DE DEVIS
+        </div>
+        <script type="text/javascript" src="https://form.jotform.com/jsform/12581402305"></script>
       </div>
     </div>
   </div>
@@ -480,14 +480,5 @@
 		ga('create', 'UA-85548125-1', 'auto');
 		ga('send', 'pageview');
   </script>
-  <script language="JavaScript">
-    // Code for validating the form
-    // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-    // for details
-    var frmvalidator  = new Validator("contactform");
-    frmvalidator.addValidation("name","req","Please provide your name");
-    frmvalidator.addValidation("email","req","Please provide your email");
-    frmvalidator.addValidation("email","email","Please enter a valid email address");
-    </script>
 </body>
 </html>

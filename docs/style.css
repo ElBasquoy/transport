@@ -6052,6 +6052,9 @@ button.close {
 .row > div {
   padding: 0; }
 
+#footer {
+  display: none; }
+
 .glyphicon-menu-down:before {
   content: "\e114";
   font-weight: lighter;
@@ -6070,16 +6073,16 @@ button.btn.btn-default.dropdown-toggle:hover .dropdown-menu {
   margin-top: 0; }
 
 header {
-  background: black;
+  background: white;
   padding: 1.5em 1em;
-  height: 75px; }
+  height: 90px; }
   @media (max-width: 1380px) {
     header {
       height: 140px; } }
   header .navbar-primary {
     margin-bottom: 0;
-    background: black;
-    border: black; }
+    background: white;
+    border: white; }
   header .navbar-default .navbar-nav > li > a {
     color: white; }
   header .navbar-default .navbar-nav > li > a:hover {
@@ -6104,11 +6107,11 @@ header {
     color: #FFFFFF;
     font-size: 90%; }
   header .dropdown-menu, header .navbar-default .navbar-nav > .open > a, header .navbar-default .navbar-nav > .open > a:hover, header .navbar-default .navbar-nav > .open > a:focus {
-    background: black;
+    background: white;
     width: 100%; }
     header .dropdown-menu a, header .navbar-default .navbar-nav > .open > a a, header .navbar-default .navbar-nav > .open > a:hover a, header .navbar-default .navbar-nav > .open > a:focus a {
       width: 100%;
-      background: black; }
+      background: white; }
 
 a {
   cursor: pointer; }
@@ -6315,6 +6318,10 @@ h1 {
 
 .home .body-contact {
   padding-bottom: 5%; }
+  .home .body-contact .title-devis {
+    padding-left: 5%;
+    font-size: 110%;
+    color: red; }
   .home .body-contact .col-sm-6 .subtitle {
     padding: 0 5%;
     text-align: center;
