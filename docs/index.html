@@ -11,14 +11,15 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vollkorn">
 </head>
 <body class="home">
-  <header class="hidden-xs">
-    <div class="row">
+  <header>
+    <div class="row hidden-xs">
       <ul class="nav nav-pills">
           <li class="col-sm-3">
-            <a class="logo-atelier" href="index.html">
+            <a class="logo-atelier" id="slogan">
               <img src="img/logo_etchegaray.png" alt="logo-etchegaray" width="130"/>
             </a>
           </li>
+          <li class="col-sm-2"></li>
           <li class="dropdown">
               <a href="#" data-toggle="dropdown" class="dropdown-toggle">ENTREPRISE <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -60,67 +61,76 @@
             </a>
           </li>
           <li>
-            <a id="ramassage" class="pull-right">
+            <a id="contact">
               CONTACT
             </a>
           </li>
       </ul>
     </div>
-    <!--<div class="visible-xs">
-      <nav class="navbar navbar-default navbar-primary">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Liens <span class="caret"></span></a>
-            <ul class="dropdown-menu open">
-              <li><a href="#activity">ACTIVITÉS</a></li>
-              <li><a href="#history">HISTORIQUE</a></li>
-              <li><a href="#car">TOURISME</a></li>
-              <li><a href="#car">FLOTTE</a></li>
-              <li><a href="#ramassage">SCOLAIRE</a></li>
-              <li><a href="#regu">BAYONNE > ST JEAN PIED DE PORT</a></li>
+    <div class="row visible-xs">
+      <ul class="nav nav-pills navbar-right">
+        <li class="col-sm-3">
+          <a class="logo-atelier" id="slogan">
+            <img src="img/logo_etchegaray.png" alt="logo-etchegaray" width="130"/>
+          </a>
+        </li>
+        <li class="col-sm-2"></li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">MENU <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                  <a data-role="button" id="activity">
+                    ACTIVITÉS
+                  </a>
+                </li>
+                <li>
+                  <a data-role="button" id="history">
+                    HISTORIQUE
+                  </a>
+                </li>
             </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>-->
-  </header>
-  <div class="body-slogan">
-    <div class="text">
-      <h1>Transports ETCHEGARAY</h1>
-      <br />
-      <h2>Vous transporter, notre passion !</h2>
+        </li>
+      </ul>
     </div>
-  </div>
-	<div class="body-activity">
-    <div class="row">
-      <div class="col-sm-6 picture-background hidden-xs">
-        <img src="img/background_activity.png" alt="background-activity"/>
+  </header>
+  <div class="template-home">
+    <div class="body-slogan">
+      <div class="text">
+        <h1>Transports ETCHEGARAY</h1>
+        <br />
+        <h2>Vous transporter, notre passion !</h2>
       </div>
-      <div class="col-sm-6 info-activities">
-         <h4 class="title">NOS ACTIVITÉS :</h4>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="block-activity">
+    </div>
+    <div class="body-activity">
+      <div class="row">
+        <div class="col-sm-6 picture-background hidden-xs">
+          <img src="img/background_activity.png" alt="background-activity"/>
+        </div>
+        <div class="col-sm-6 info-activities">
+          <h4 class="title">NOS ACTIVITÉS :</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="block-activity">
                   <div class="info-activity">
                     Transport scolaire
                   </div>
                   <div class="list-activity">
                     <h5>
-                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
                       Ramassages scolaire
                     </h5>
                     <h5>
-                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
                       Sorties péri – scolaire
                     </h5>
                     <h5>
-                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
                       Classes découverte
                     </h5>
                   </div>
+                </div>
               </div>
-            </div>
-            <div class="col-sm-6">
+              <div class="col-sm-6">
                 <div class="block-activity">
                   <div class="info-activity">
                     Ligne Régulière
@@ -132,340 +142,340 @@
                     </h5>
                   </div>
                 </div>
+              </div>
             </div>
-          </div>
-          <div class="row second-activity">
-            <div class="col-sm-6">
-              <div class="block-activity">
+            <div class="row second-activity">
+              <div class="col-sm-6">
+                <div class="block-activity">
                   <div class="info-activity">
                     Tourisme
                   </div>
                   <div class="list-activity">
                       <h5>
-                        <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
                         Excursions à la journée
                       </h5>
                       <h5>
-                        <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
                         Séjours (en France ou à l’étranger)
                       </h5>
                       <h5>
-                        <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
                         Sorties cidreries
                       </h5>
                       <h5>
-                        <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
                         Réceptif pour les hôtels de la région
                       </h5>
                   </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="block-activity">
-                <div class="info-activity">
-                  Location 9 places sans conducteurs
-                </div>
-                <div class="list-activity">
-                  <h5>
-                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                    Seulement en période de vacances scolaires
-                  </h5>
                 </div>
               </div>
+              <div class="col-sm-6">
+                <div class="block-activity">
+                  <div class="info-activity">
+                    Location 9 places sans conducteurs
+                  </div>
+                  <div class="list-activity">
+                    <h5>
+                      <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+                      Seulement en période de vacances scolaires
+                    </h5>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
         <div class="col-sm-6 picture-background visible-xs">
           <img src="img/background_activity.png" alt="background-activity"/>
         </div>
       </div>
     </div>
-  </div>
-	<div class="body-history">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="img-bask">
-          <h2 class="title">HISTORIQUE :</h2>
+    <div class="body-history">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="img-bask">
+            <h2 class="title">HISTORIQUE :</h2>
+          </div>
+          <h3 class="subtitle-history">
+            Trois générations se sont succédées depuis la création de l'entreprise en 1952.
+          </h3>
+          <h3 class="info-history">
+            Avec un seul autocar, Louis assure pendant presque 20 ans la liaison pour aller dans les différents marchés des environs.
+            <br/>
+            Dans les années 70, l’activité se développe avec l’arrivée des transports scolaires.
+          </h3>
         </div>
-        <h3 class="subtitle-history">
-          Trois générations se sont succédées depuis la création de l'entreprise en 1952.
-        </h3>
-        <h3 class="info-history">
-          Avec un seul autocar, Louis assure pendant presque 20 ans la liaison pour aller dans les différents marchés des environs.
-          <br/>
-          Dans les années 70, l’activité se développe avec l’arrivée des transports scolaires.
-        </h3>
-      </div>
-      <div class="col-sm-6 picture-background">
-        <img src="img/background_history.png" alt="background-history"/>
+        <div class="col-sm-6 picture-background">
+          <img src="img/background_history.png" alt="background-history"/>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="body-car">
-    <h2 class="title">NOS VÉHICULE DE TOURISME :</h2>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="info-car">
-            Temsa MD9
-            <span>
-              (31 places)
-              <img src="img/logo_handicap.jpg" alt="logo-handicapé" height="24"/>
-            </span>
-        </div>
-        <div class="img-flotte">
-          <div id="carousel-example-generic2" class="hidden-xs carousel slide carousel-flotte" data-interval="false" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="img/car_temsa.png" alt="carrousel-moteur">
+    <div class="body-car">
+      <h2 class="title">NOS VÉHICULE DE TOURISME :</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="info-car">
+              Temsa MD9
+              <span>
+                (31 places)
+                <img src="img/logo_handicap.jpg" alt="logo-handicapé" height="24"/>
+              </span>
+          </div>
+          <div class="img-flotte">
+            <div id="carousel-example-generic2" class="hidden-xs carousel slide carousel-flotte" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/car_temsa.png" alt="carrousel-moteur">
+                </div>
+                <div class="item">
+                  <img src="img/car_temsa.png" alt="carrousel-jetly">
+                </div>
               </div>
-              <div class="item">
-                <img src="img/car_temsa.png" alt="carrousel-jetly">
-              </div>
+              <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <div class="visible-xs">
+              <img src="img/car_temsa.png" alt="background-temsa"/>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="info-car">
+              Irizar i6
+              <span>(46 places)</span>
+          </div>
+          <div class="img-flotte">
+            <div id="carousel-example-generic2" class="hidden-xs carousel slide carousel-flotte" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/car_temsa.png" alt="carrousel-moteur">
+                </div>
+                <div class="item">
+                  <img src="img/car_temsa.png" alt="carrousel-jetly">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="visible-xs">
+              <img src="img/car_temsa.png" alt="background-temsa"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row second-flotte">
+        <div class="col-sm-6">
+          <div class="info-car">
+              Neoplan Jetliner
+              <span>
+                (53 places)
+                <img src="img/logo_handicap.jpg" alt="logo-handicapé" height="24"/>
+              </span>
+          </div>
+          <div class="img-flotte">
+            <div id="carousel-example-generic1" class="hidden-xs carousel slide carousel-flotte" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/car_temsa.png" alt="carrousel-moteur">
+                </div>
+                <div class="item">
+                  <img src="img/car_temsa.png" alt="carrousel-jetly">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="visible-xs">
+            <img src="img/car_temsa.png" alt="background-temsa"/>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="info-car">
+              Scania Century
+              <span>(57 places)</span>
+          </div>
+          <div class="img-flotte">
+            <div id="carousel-example-generic" class="hidden-xs carousel slide carousel-flotte" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/car_temsa.png" alt="carrousel-moteur">
+                </div>
+                <div class="item">
+                  <img src="img/car_temsa.png" alt="carrousel-jetly">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
           <div class="visible-xs">
             <img src="img/car_temsa.png" alt="background-temsa"/>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="info-car">
-            Irizar i6
-            <span>(46 places)</span>
+    </div>
+    <div class="body-flotte">
+      <h2 class="title">NOTRE FLOTTE :</h2>
+      <h3 class="info">
+        Tous nos véhicules sont équipés de ceinture de sécurité, et de la climatisation.
+      </h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="img-flotte">
+            <img src="img/flotte_1.png" alt="flotte-1"/>
+          </div>
         </div>
-        <div class="img-flotte">
-          <div id="carousel-example-generic2" class="hidden-xs carousel slide carousel-flotte" data-interval="false" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="img/car_temsa.png" alt="carrousel-moteur">
-              </div>
-              <div class="item">
-                <img src="img/car_temsa.png" alt="carrousel-jetly">
-              </div>
+        <div class="col-sm-4">
+          <div class="img-flotte">
+            <img src="img/flotte_2.png" alt="flotte-2"/>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="img-flotte">
+            <img src="img/flotte_3.png" alt="flotte-3"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-ramassage">
+      <div class="row">
+        <div class="col-sm-4 picture-background hidden-xs">
+          <img src="img/background_ramassage.png" alt="background-ramassage"/>
+        </div>
+        <div class="col-sm-8">
+          <h2 class="title">RAMASSAGE SCOLAIRE :</h2>
+          <h3 class="subtitle">
+            Sur le site du Conseil Général vous trouverez les formulaires nécessaires pour :
+          </h3>
+          <h4 class="infos">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+            Inscription aux transports scolaires – rentrée 2017-2018
+          </h4>
+          <h4 class="infos">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+            Demande de participation financière
+          </h4>
+          <h4 class="infos">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+            Le transports des élèves handicapés
+          </h4>
+          <h4 class="infos">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+            L’établissement d’un duplicata de carte de transport
+          </h4>
+          <div class="row">
+            <a class="col-sm-offset-2 col-sm-4 col-xs-12 web-info" target="_blank" href="http://www.transports64.fr/Scolaires">
+              Le site :
+              <img src="img/icon_clock_ramassage.png" alt="icon-clock-ramassage"/>
+            </a>
+            <a class="col-sm-offset-1 col-sm-5 col-xs-12 web-info" target="_blank" href="http://transports64scolaires.le64.fr/">
+              Les horaires :
+              <img src="img/icon_website_ramassage.png" alt="icon-website-ramassage"/>
+            </a>
+          </div>
+          <div class="question-transport hidden-xs">
+            <img src="img/question_transport.png" alt="question-transport" height="150"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-regu">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="first-title">LIGNE REGULIERE</h2>
+          <h2 class="second-title">BAYONNE > ST JEAN PIED DE PORT :</h2>
+          <h3 class="infos">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+            Cette ligne est spécialement réservée aux internes qui vont dans un établissement scolaire de St Jean Pied de Port. L’inscription se fait par téléphone au 05.59.37.67.55 ou mail <a href="mailto:transports.etchegaray@orange.fr">transports.etchegaray@orange.fr</a>
+          </h3>
+          <h3 class="infos">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+            L’abonnement annuel, règlement en 5 fois (correspond à chaque vacances scolaires). Il n’y a pas de carte, l’enfant est inscrit sur la liste du conducteur.
+          </h3>
+          <h3 class="infos">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+            Ci - dessous les tarifs ainsi que les points d’arrêts et les horaires :
+          </h3>
+          <div class="tarifs">
+            <img src="img/excel_reguliere.jpg" alt="excel-reguliere"/>
+          </div>
+        </div>
+        <div class="col-sm-6 picture-background hidden-xs">
+          <img src="img/background_reguliere.png" alt="background-reguliere"/>
+        </div>
+      </div>
+    </div>
+    <div class="body-contact">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4 class="subtitle">
+            Pour toute demande de devis, contactez-nous par mail, téléphone, fax, ou formulaire contact, réponse dans l’heure qui suit !
+          </h4>
+          <div class="row">
+            <div class="col-xs-offset-2 col-xs-2 text-center">
+              <img src="img/icon_localization.png" alt="icon-localization" height="30"/>
             </div>
-            <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          <div class="visible-xs">
-            <img src="img/car_temsa.png" alt="background-temsa"/>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row second-flotte">
-      <div class="col-sm-6">
-        <div class="info-car">
-            Neoplan Jetliner
-            <span>
-              (53 places)
-              <img src="img/logo_handicap.jpg" alt="logo-handicapé" height="24"/>
-            </span>
-        </div>
-        <div class="img-flotte">
-          <div id="carousel-example-generic1" class="hidden-xs carousel slide carousel-flotte" data-interval="false" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="img/car_temsa.png" alt="carrousel-moteur">
-              </div>
-              <div class="item">
-                <img src="img/car_temsa.png" alt="carrousel-jetly">
-              </div>
+            <div class="col-xs-8 info">
+              "Kayola" - Bourg <br/> 64780 Irissarry
             </div>
-            <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
-        </div>
-        <div class="visible-xs">
-          <img src="img/car_temsa.png" alt="background-temsa"/>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="info-car">
-            Scania Century
-            <span>(57 places)</span>
-        </div>
-        <div class="img-flotte">
-          <div id="carousel-example-generic" class="hidden-xs carousel slide carousel-flotte" data-interval="false" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="img/car_temsa.png" alt="carrousel-moteur">
-              </div>
-              <div class="item">
-                <img src="img/car_temsa.png" alt="carrousel-jetly">
-              </div>
+          <div class="row">
+            <div class="col-xs-offset-2 col-xs-2 text-center">
+                <img src="img/icon_phone.png" alt="icon-phone" height="30"/>
             </div>
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-        <div class="visible-xs">
-          <img src="img/car_temsa.png" alt="background-temsa"/>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="body-flotte">
-    <h2 class="title">NOTRE FLOTTE :</h2>
-    <h3 class="info">
-      Tous nos véhicules sont équipés de ceinture de sécurité, et de la climatisation.
-    </h3>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="img-flotte">
-          <img src="img/flotte_1.png" alt="flotte-1"/>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="img-flotte">
-          <img src="img/flotte_2.png" alt="flotte-2"/>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="img-flotte">
-          <img src="img/flotte_3.png" alt="flotte-3"/>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="body-ramassage">
-    <div class="row">
-      <div class="col-sm-4 picture-background hidden-xs">
-        <img src="img/background_ramassage.png" alt="background-ramassage"/>
-      </div>
-      <div class="col-sm-8">
-        <h2 class="title">RAMASSAGE SCOLAIRE :</h2>
-        <h3 class="subtitle">
-          Sur le site du Conseil Général vous trouverez les formulaires nécessaires pour :
-        </h3>
-        <h4 class="infos">
-          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-          Inscription aux transports scolaires – rentrée 2017-2018
-        </h4>
-        <h4 class="infos">
-          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-          Demande de participation financière
-        </h4>
-        <h4 class="infos">
-          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-          Le transports des élèves handicapés
-        </h4>
-        <h4 class="infos">
-          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-          L’établissement d’un duplicata de carte de transport
-        </h4>
-        <div class="row">
-          <a class="col-sm-offset-2 col-sm-4 col-xs-12 web-info">
-            Le site :
-            <img src="img/icon_clock_ramassage.png" alt="icon-clock-ramassage"/>
-          </a>
-          <a class="col-sm-offset-1 col-sm-5 col-xs-12 web-info">
-            Les horaires :
-            <img src="img/icon_website_ramassage.png" alt="icon-website-ramassage"/>
-          </a>
-        </div>
-        <a class="question-transport hidden-xs">
-          <img src="img/question_transport.png" alt="question-transport" height="150"/>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="body-regu">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2 class="first-title">LIGNE REGULIERE</h2>
-        <h2 class="second-title">BAYONNE > ST JEAN PIED DE PORT :</h2>
-        <h3 class="infos">
-          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-          Cette ligne est spécialement réservée aux internes qui vont dans un établissement scolaire de St Jean Pied de Port. L’inscription se fait par téléphone au 05.59.37.67.55 ou mail <a href="mailto:transports.etchegaray@orange.fr">transports.etchegaray@orange.fr</a>
-        </h3>
-        <h3 class="infos">
-          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-          L’abonnement annuel, règlement en 5 fois (correspond à chaque vacances scolaires). Il n’y a pas de carte, l’enfant est inscrit sur la liste du conducteur.
-        </h3>
-        <h3 class="infos">
-          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-          Ci - dessous les tarifs ainsi que les points d’arrêts et les horaires :
-        </h3>
-        <div class="tarifs">
-          <img src="img/excel_reguliere.png" alt="excel-reguliere"/>
-        </div>
-      </div>
-      <div class="col-sm-6 picture-background hidden-xs">
-        <img src="img/background_reguliere.png" alt="background-reguliere"/>
-      </div>
-    </div>
-  </div>
-  <div class="body-contact">
-    <div class="row">
-      <div class="col-sm-6">
-        <h4 class="subtitle">
-          Pour toute demande de devis, contactez-nous par mail, téléphone, fax, ou formulaire contact, réponse dans l’heure qui suit !
-        </h4>
-        <div class="row">
-          <div class="col-xs-offset-2 col-xs-2 text-center">
-            <img src="img/icon_localization.png" alt="icon-localization" height="30"/>
-          </div>
           <div class="col-xs-8 info">
-            "Kayola" - Bourg <br/> 64780 Irissarry
+              TEL/FAX : 05.59.37.67.55 <br/>
+              PORT : 06.12.58.82.66
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-offset-2 col-xs-2 text-center">
+                <img src="img/icon_email.png" alt="icon-email" height="30"/>
+            </div>
+            <a href="mailto:transports.etchegaray@orange.fr" class="col-xs-8 info">
+              transports.etchegaray@orange.fr
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-sm-offset-2 col-xs-2 text-center">
+                <img src="img/icon_fb.png" alt="icon-fb" height="30"/>
+            </div>
+            <a href="https://www.facebook.com/TransportsEtchegaray/" target="_blank" class="col-xs-8 info">
+              TransportsEtchegaray
+            </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-offset-2 col-xs-2 text-center">
-              <img src="img/icon_phone.png" alt="icon-phone" height="30"/>
+        <div class="col-sm-6">
+          <div class="title-devis">
+            DEMANDE DE DEVIS
           </div>
-        <div class="col-xs-8 info">
-            TEL/FAX : 05.59.37.67.55 <br/>
-            PORT : 06.12.58.82.66
-          </div>
+          <script type="text/javascript" src="https://form.jotform.com/jsform/12581402305"></script>
         </div>
-        <div class="row">
-          <div class="col-sm-offset-2 col-xs-2 text-center">
-              <img src="img/icon_email.png" alt="icon-email" height="30"/>
-          </div>
-          <a href="mailto:transports.etchegaray@orange.fr" class="col-xs-8 info">
-            transports.etchegaray@orange.fr
-          </a>
-        </div>
-        <div class="row">
-          <div class="col-sm-offset-2 col-xs-2 text-center">
-              <img src="img/icon_fb.png" alt="icon-fb" height="30"/>
-          </div>
-          <a href="https://www.facebook.com/TransportsEtchegaray/" target="_blank" class="col-xs-8 info">
-            TransportsEtchegaray
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="title-devis">
-          DEMANDE DE DEVIS
-        </div>
-        <script type="text/javascript" src="https://form.jotform.com/jsform/12581402305"></script>
       </div>
     </div>
   </div>

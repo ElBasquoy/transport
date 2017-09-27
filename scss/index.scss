@@ -1,263 +1,270 @@
 .home{
-  .title{
-    font-size: 26px;
-    color: $black;
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-align: center;
-    padding: 5% 0 5% 0;
-    margin: 0;
-  }
-  .first-title{
-    font-size: 26px;
-    color: $black;
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-align: center;
-    padding: 5% 0 1% 0;
-    margin: 0;
-  }
-  .second-title{
-    font-size: 26px;
-    color: $black;
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-align: center;
-    padding: 0% 0 5% 0;
-    margin: 0;
-  }
-  .body-slogan{
-    padding: 5% 0;
-    background: url(img/background_home.png) no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    .text{
-      padding-top: 8%;
-      text-align: center;
+  .template-home{
+    overflow: auto;
+    height: 100%;
+    .title{
+      font-size: 26px;
       color: $black;
-      @media (max-width: 768px) {
-        padding-top: 25%;
-        h1{
-          font-size: 30px
-        }
-        h2{
-          font-size: 27px
+      text-decoration: underline;
+      text-decoration-color: red;
+      text-align: center;
+      padding: 5% 0 5% 0;
+      margin: 0;
+    }
+    .first-title{
+      font-size: 26px;
+      color: $black;
+      text-decoration: underline;
+      text-decoration-color: red;
+      text-align: center;
+      padding: 5% 0 1% 0;
+      margin: 0;
+    }
+    .second-title{
+      font-size: 26px;
+      color: $black;
+      text-decoration: underline;
+      text-decoration-color: red;
+      text-align: center;
+      padding: 0% 0 5% 0;
+      margin: 0;
+    }
+    .body-slogan{
+      padding: 5% 0;
+      background: url(img/background_home.png) no-repeat center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      .text{
+        padding-top: 8%;
+        text-align: center;
+        color: $black;
+        @media (max-width: 768px) {
+          padding-top: 25%;
+          h1{
+            font-size: 30px
+          }
+          h2{
+            font-size: 27px
+          }
         }
       }
     }
-  }
-  .body-activity{
-    padding: 5% 0;
-    .second-activity{
-      padding-top: 10%
+    .body-activity{
+      padding: 5% 0;
+      .second-activity{
+        padding-top: 10%
+      }
+      .picture-background{
+        img{
+          border-radius: 0px 5px 5px 0px;
+          @media (max-width: 768px) {
+            padding: 5%;
+            border-radius: 5px
+          }
+        }
+      }
+      .info-activities{
+        padding: 0 2%;
+        .title{
+          padding-bottom: 10%;
+          @media (max-width: 768px) {
+            padding-bottom: 5%;
+          }
+        }
+        .block-activity{
+          color: $black;
+          margin-bottom: 20px;
+          padding: 0 5%;
+          .info-activity{
+            font-size: 22px;
+            margin-bottom: 5px
+          }
+          .list-activity{
+            .glyphicon{
+              margin-right: 5px
+            }
+          }
+        }
+      }
     }
-    .picture-background{
-      img{
-        border-radius: 0px 5px 5px 0px;
+    .body-car{
+      padding: 5% 0;
+      .second-flotte{
+        margin-top: 5%
+      }
+      .info-car{
+        text-align: center;
+        font-size: 17px;
+        font-weight: 200;
+        color: $black;
+        span{
+          display: block;
+          font-size: 14px;
+        }
+      }
+      .img-flotte{
+        text-align: center;
+        .carousel-flotte{
+          width: 470px;
+          display: inline-block;
+        }
+        img{
+          width: 470px;
+          border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+          padding: 0 5%;
+          img{
+            width: 100%
+          }
+        }
+      }
+    }
+    .body-flotte{
+      padding: 5% 5% 5% 5%;
+      .img-flotte{
+        text-align: center;
+        img{
+          width: 98%;
+          border-radius: 5px
+        }
+      }
+      .info{
+        text-align: center;
+        padding-bottom: 5%;
+        font-size: 20px;
+      }
+      @media (max-width: 768px) {
+        padding: 5%;
+        .col-sm-4{
+          padding-bottom: 5%
+        }
+      }
+    }
+    .body-history{
+      .img-bask{
+        padding: 5% 0;
+        background: url(img/background_bask.png) no-repeat center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        margin: 5% 15%;
+        border-radius: 5px;
+        @media (max-width: 768px) {
+          background: none
+        }
+      }
+      .subtitle-history{
+        text-align: center;
+        font-size: 21px;
+        padding: 0 5%;
+        color: black;
+      }
+      .info-history{
+        text-align: center;
+        font-size: 19px;
+        padding: 0 5%;
+        color: black;
+      }
+      .picture-background{
+        border-radius: 5px 0px 0px 5px;
         @media (max-width: 768px) {
           padding: 5%;
           border-radius: 5px
         }
       }
     }
-    .info-activities{
-      padding: 0 2%;
-      .title{
-        padding-bottom: 10%;
-        @media (max-width: 768px) {
+    .body-ramassage{
+      padding-bottom: 5%;
+      .picture-background{
+        border-radius: 0px 5px 5px 0px;
+        img{
+          max-height: 700px
+        }
+      }
+      .col-sm-8{
+        padding: 0 5%;
+        .subtitle{
+          text-align: center;
+          font-size: 19px;
           padding-bottom: 5%;
         }
-      }
-      .block-activity{
-        color: $black;
-        margin-bottom: 20px;
-        padding: 0 5%;
-        .info-activity{
-          font-size: 22px;
-          margin-bottom: 5px
-        }
-        .list-activity{
+        .infos{
+          color: black;
           .glyphicon{
-            margin-right: 5px
+            font-size: 14px;
+            margin-right: 10px;
           }
         }
-      }
-    }
-  }
-  .body-car{
-    padding: 5% 0;
-    .second-flotte{
-      margin-top: 5%
-    }
-    .info-car{
-      text-align: center;
-      font-size: 17px;
-      font-weight: 200;
-      color: $black;
-      span{
-        display: block;
-        font-size: 14px;
-      }
-    }
-    .img-flotte{
-      text-align: center;
-      .carousel-flotte{
-        width: 470px;
-        display: inline-block;
-      }
-      img{
-        width: 470px;
-        border-radius: 5px;
-      }
-      @media (max-width: 768px) {
-        padding: 0 5%;
-        img{
-          width: 100%
+        .web-info{
+          padding-top: 5%;
+          font-size: 20px;
+          color: $brand-primary;
+          img{
+            height: 80px;
+            width: 80px;
+          }
+          @media (max-width: 768px) {
+            text-align: center
+          }
+        }
+        .question-transport{
+          display: block;
+          text-align: center;
+          padding-top: 5%
         }
       }
     }
-  }
-  .body-flotte{
-    padding: 5% 5% 5% 5%;
-    .img-flotte{
-      text-align: center;
-      img{
-        width: 98%;
-        border-radius: 5px
-      }
-    }
-    .info{
-      text-align: center;
+    .body-regu{
       padding-bottom: 5%;
-      font-size: 20px;
-    }
-    @media (max-width: 768px) {
-      padding: 5%;
-      .col-sm-4{
-        padding-bottom: 5%
-      }
-    }
-  }
-  .body-history{
-    .img-bask{
-      padding: 5% 0;
-      background: url(img/background_bask.png) no-repeat center;
-      -webkit-background-size: cover;
-      background-size: cover;
-      margin: 5% 15%;
-      border-radius: 5px;
-      @media (max-width: 768px) {
-        background: none
-      }
-    }
-    .subtitle-history{
-      text-align: center;
-      font-size: 21px;
-      padding: 0 5%;
-      color: black;
-    }
-    .info-history{
-      text-align: center;
-      font-size: 19px;
-      padding: 0 5%;
-      color: black;
-    }
-    .picture-background{
-      border-radius: 5px 0px 0px 5px;
-      @media (max-width: 768px) {
-        padding: 5%;
-        border-radius: 5px
-      }
-    }
-  }
-  .body-ramassage{
-    padding-bottom: 5%;
-    .picture-background{
-      border-radius: 0px 5px 5px 0px;
-    }
-    .col-sm-8{
-      padding: 0 5%;
-      .subtitle{
-        text-align: center;
-        font-size: 19px;
-        padding-bottom: 5%;
-      }
       .infos{
         color: black;
+        font-size: 18px;
+        padding: 5px 5%;
+        a, a:hover{
+          color: black;
+          text-decoration: none
+        }
         .glyphicon{
           font-size: 14px;
           margin-right: 10px;
         }
       }
-      .web-info{
-        padding-top: 5%;
-        font-size: 20px;
-        color: $brand-primary;
+      .tarifs{
+        text-align: center;
         img{
-          height: 80px;
-          width: 80px;
-        }
-        @media (max-width: 768px) {
-          text-align: center
+          width: 90%;
         }
       }
-      .question-transport{
-        display: block;
-        text-align: center;
-        padding-top: 5%
+    }
+    .body-contact{
+      padding-bottom: 5%;
+      .title-devis{
+        padding-left: 5%;
+        font-size: 110%;
+        color: red;
+      }
+      .col-sm-6{
+        .subtitle{
+          padding: 0 5%;
+          text-align: center;
+          color: black
+        }
+        .info{
+          color: black;
+          font-size: 18px;
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+        .row{
+          padding: 2% 0;
+        }
       }
     }
-  }
-  .body-regu{
-    padding-bottom: 5%;
-    .infos{
-      color: black;
-      font-size: 18px;
-      padding: 5px 5%;
-      a, a:hover{
-        color: black;
-        text-decoration: none
-      }
-      .glyphicon{
-        font-size: 14px;
-        margin-right: 10px;
-      }
-    }
-    .tarifs{
-      text-align: center;
+    .picture-background{
       img{
-        width: 95%;
+        width: 100%
       }
-    }
-  }
-  .body-contact{
-    padding-bottom: 5%;
-    .title-devis{
-      padding-left: 5%;
-      font-size: 110%;
-      color: red;
-    }
-    .col-sm-6{
-      .subtitle{
-        padding: 0 5%;
-        text-align: center;
-        color: black
-      }
-      .info{
-        color: black;
-        font-size: 18px;
-        @media (max-width: 768px) {
-          font-size: 16px;
-        }
-      }
-      .row{
-        padding: 2% 0;
-      }
-    }
-  }
-  .picture-background{
-    img{
-      width: 100%
     }
   }
 }

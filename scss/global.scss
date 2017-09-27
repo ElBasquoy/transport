@@ -30,8 +30,15 @@ header{
   background: white;
   padding: 1.5em 1em;
   height: 90px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 1px solid #ccc;
   @media (max-width: 1380px) {
     height: 140px;
+  }
+  @media (max-width: 768px) {
+    height: 80px;
   }
   .navbar-primary{
     margin-bottom: 0;
@@ -43,16 +50,6 @@ header{
   }
   .navbar-default .navbar-nav > li > a:hover{
     color: #c34949
-  }
-  @media (max-width: 768px) {
-    padding: 1em;
-    .btn-group {
-      float: right;
-      margin-top: 10px
-    }
-    .logo-atelier{
-      float: left
-    }
   }
   .btn-block {
     color: $white;
